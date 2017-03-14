@@ -1,15 +1,206 @@
-
-<!DOCTYPE HTML>
-
 <html>
-  <head>
+
+<head>
+    <meta charset="UTF-8">
     <title>Parsa Mivehchi | Code</title>
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="Parsa Mivehchi | Code">
+    <meta name="keywords" content="Parsa Mivehchi | Code">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-  </head>
-  <frameset rows="*">
-    <frame frameborder=0 src="https://parsa.mivehchi.net" name="parsa-mivehchi" scrolling="auto" noresize>
-  </frameset>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+    <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Lato:300'>
+
+    <style>
+        body {
+            background: -webkit-linear-gradient(top, #4b6cb7, #182848);
+            background: linear-gradient(180deg, #4b6cb7, #182848);
+            color: #f7f7f7;
+            font-family: 'Lato', sans-serif;
+            font-weight: 300;
+        }
+        
+        .container {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -ms-flex-line-pack: center;
+            align-content: center;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            width: 60vw;
+            max-width: 1200px;
+            margin: 0 auto;
+            min-height: 100vh;
+        }
+        
+        .button {
+            -webkit-box-flex: 1;
+            -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+            margin: 10px;
+            padding: 20px;
+            border: 2px solid #f7f7f7;
+            text-align: center;
+            text-transform: uppercase;
+            position: relative;
+            overflow: hidden;
+            -webkit-transition: .3s;
+            transition: .3s;
+        }
+        
+        .button:after {
+            position: absolute;
+            -webkit-transition: .3s;
+            transition: .3s;
+            content: '';
+            width: 0;
+            left: 50%;
+            bottom: 0;
+            height: 3px;
+            background: #f7f7f7;
+        }
+        
+        .button:nth-of-type(2):after {
+            left: 0;
+        }
+        
+        .button:nth-of-type(3):after {
+            right: 0;
+            left: auto;
+        }
+        
+        .button:nth-of-type(4):after {
+            left: 0;
+            bottom: auto;
+            top: -3px;
+            width: 100%;
+        }
+        
+        .button:nth-of-type(5):after {
+            height: 120%;
+            left: -10%;
+            -webkit-transform: skewX(15deg);
+            transform: skewX(15deg);
+            z-index: -1;
+        }
+        
+        .button:hover {
+            cursor: pointer;
+        }
+        
+        .button:hover:after {
+            width: 100%;
+            left: 0;
+        }
+        
+        .button:hover:nth-of-type(4):after {
+            top: calc(100% - 3px);
+        }
+        
+        .button:hover:nth-of-type(5) {
+            color: #5bcaff;
+        }
+        
+        .button:hover:nth-of-type(5):after {
+            left: -10%;
+            width: 120%;
+        }
+        
+        .button:hover:nth-of-type(6) {
+            -webkit-box-flex: 3;
+            -ms-flex-positive: 3;
+            flex-grow: 3;
+        }
+        
+        .button:hover:nth-of-type(6):after {
+            width: 0%;
+        }
+        
+        .button:hover:nth-of-type(7) {
+            border-radius: 30px;
+        }
+        
+        .button:hover:nth-of-type(7):after {
+            width: 0%;
+        }
+        
+        .button:hover:nth-of-type(8) {
+            -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+        }
+        
+        .button:hover:nth-of-type(8):after {
+            width: 0%;
+        }
+        
+        .button:hover:nth-of-type(9) {
+            box-shadow: inset 0px 0px 0px 3px #f7f7f7;
+        }
+        
+        .button:hover:nth-of-type(9):after {
+            width: 0%;
+        }
+        
+        .button:hover:nth-of-type(10) {
+            box-shadow: 0px 0px 0px 3px #f7f7f7;
+        }
+        
+        .button:hover:nth-of-type(10):after {
+            width: 0%;
+        }
+        
+        a {
+            color: white;
+        }
+        
+        a:link {
+            text-decoration: none;
+        }
+        
+        a:visited {
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: none;
+        }
+        
+        a:active {
+            text-decoration: none;
+        }
+        /*
+        code-portfolio
+css-palettes-reference
+hex-color-list
+ios
+justify-center
+minimal-vcard
+smpte-color-bars
+        */
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="button"><a href="./code-portfolio">code-portfolio</a></div>
+        <div class="button"><a href="./css-palettes-reference">css-palettes-reference</a></div>
+        <div class="button"><a href="./hex-color-list">hex-color-list</a></div>
+        <div class="button"><a href="./ios">ios</a></div>
+        <div class="button"><a href="./justify-center">justify-center</a></div>
+        <div class="button"><a href="./minimal-vcard">minimal-vcard</a></div>
+        <div class="button"><a href="./smpte-color-bars">smpte-color-bars</a></div>
+        <div class="button"><a href="https://mivehchi.net">Parsa Mivehchi</a></div>
+        <div class="button"><a href="https://parsa1.com">Parsa Mivehchi</a>)</div>
+        <div class="button"><a href="https://parsamivehchi.com">Parsa Mivehchi</a></div>
+    </div>
+
+</body>
+
 </html>
