@@ -1,0 +1,31 @@
+$background: #f5f5f5;
+$primary: #fff;
+// Box-shadow variables
+$shadow: rgba(36, 20, 12, .15);
+$di-1: 2px;
+$di-2: $di-1*2;
+$di-3: $di-2*2;
+$di-4: $di-3*2;
+$di-5: $di-4*2;
+$di-6: $di-5*2;
+@mixin realistic-shadow {
+  box-shadow: $shadow 0 $di-1 $di-1, $shadow 0 $di-2 $di-2, $shadow 0 $di-3 $di-3, $shadow 0 $di-4 $di-4, $shadow 0 $di-5 $di-5, $shadow 0 $di-6 $di-6;
+}
+
+body {
+  background: $background;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 450px;
+  height: 250px;
+  background: $primary;
+  @include realistic-shadow;
+}

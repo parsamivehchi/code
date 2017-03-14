@@ -1,0 +1,148 @@
+html,
+body {
+  height: 800px;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  overflow-x: hidden;
+}
+.screen {
+  box-shadow: 0px 0px 20px 0px rgba(17,17,17,0.6);
+  border-radius: 5px;
+  overflow: hidden;
+  height: 700px;
+  width: 400px;
+  position: absolute;
+  left: 50%;
+  top: 5%;
+  -webkit-transform: translateX(-200px);
+          transform: translateX(-200px);
+  background: url("https://i.imgur.com/rt0Fnel.jpg") center center no-repeat;
+  background-size: cover;
+}
+.screen .page.firstpage {
+  left: 0px;
+}
+.screen .page.secondpage {
+  left: 400px;
+}
+.screen .page {
+  width: 100%;
+  height: 570px;
+  position: absolute;
+  top: 30px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.screen .page .row {
+  margin-bottom: 10px;
+  margin-left: 40px;
+}
+.screen .page .row .icon {
+  display: inline-block;
+  width: 23%;
+}
+.screen .page .row .icon p {
+  margin: 0px;
+  font-size: 11px;
+  width: 70px;
+  text-align: center;
+}
+.screen .dock {
+  height: 90px;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  background-color: rgba(100,100,100,0.85);
+  center: center no-repeat;
+  background-size: cover;
+}
+.screen .dock .icons {
+  width: 100%;
+  margin-left: 40px;
+}
+.screen .dock .icons .icon {
+  width: 20.2%;
+  height: 100%;
+  display: inline-block;
+  margin: auto;
+}
+.screen .dock .icons .icon .content {
+  padding-top: 5px;
+}
+.screen .dock .icons .icon .content p {
+  margin: 0px;
+  font-size: 11px;
+  width: 65px;
+  text-align: center;
+}
+.screen .page-icon {
+  position: absolute;
+  left: 50%;
+  bottom: 90px;
+  -webkit-transform: translateX(-13px);
+          transform: translateX(-13px);
+}
+.screen .page-icon .circles .circle {
+  height: 10px;
+  width: 10px;
+  background-color: rgba(255,255,255,0.7);
+  display: inline-block;
+  border-radius: 50%;
+}
+.screen .page-icon .circles .circle.active {
+  background-color: #fff;
+}
+.screen .topBar {
+  height: 20px;
+  width: 100%;
+  position: absolute;
+  top: -5px;
+}
+.screen .topBar .time p {
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-20px);
+          transform: translateX(-20px);
+  font-size: 13px;
+}
+.screen .topBar .battery {
+  float: right;
+  padding-right: 10px;
+}
+.screen .topBar .battery .fa {
+  display: inline-block;
+  padding-top: 10px;
+}
+.screen .topBar .service {
+  padding-left: 10px;
+  float: left;
+}
+.screen .topBar .service .circle {
+  height: 5px;
+  width: 5px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0px -1px 0px -1px;
+  border: 1px solid #fff;
+}
+.screen .topBar .service .circle.five {
+  background-color: #fff;
+}
+.screen .topBar .service .carrier {
+  display: inline-block;
+  font-size: 13px;
+}
+.screen .topBar .service .fa.fa-wifi {
+  font-size: 13px;
+}
